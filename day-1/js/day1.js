@@ -92,3 +92,20 @@ console.log((a1 *= 15));
 console.log((a1 /= 3));
 console.log((a1 %= 3));
 console.log((a1 **= 5));
+
+//81. Basic Operators: Comparison Operators
+/*
+==,===,!=,>,<,>=,<=
+*/
+
+const number1 = 10;
+const number2 = 20;
+// const number2 = "10";
+
+console.log(number1 == number2);
+console.log(number1 === number2);
+console.log(number1 != number2);
+console.log(number1 > number2);
+console.log(number1 < number2);
+console.log(number1 >= number2);
+console.log(number1 <= number2);
