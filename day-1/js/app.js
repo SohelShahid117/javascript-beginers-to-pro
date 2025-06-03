@@ -79,3 +79,16 @@ console.log(a * b);
 console.log(a / b);
 console.log(a % b);
 console.log(a ** b);
+
+//80. Basic Operators: Assignment Operators
+/*
+=,+=,-=,*=,/=,%=,**=
+*/
+let a1 = 2;
+console.log(a1);
+console.log((a1 += 4));
+console.log((a1 -= 5));
+console.log((a1 *= 15));
+console.log((a1 /= 3));
+console.log((a1 %= 3));
+console.log((a1 **= 5));
