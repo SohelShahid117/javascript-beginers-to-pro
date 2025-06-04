@@ -41,3 +41,13 @@ console.log(phrase.substring(11, phrase.length));
 const word = "                      coding!!!         ";
 console.log(word);
 console.log(word.trim());
+
+//84. Template literals and string
+let x = 5,
+  y = 6.66,
+  sum;
+sum = x + y;
+console.log(sum);
+console.log(`sum of x & y is : ${x + y}`);
+
+//85. Basic number operations: addition, subtraction, multiplication, division
