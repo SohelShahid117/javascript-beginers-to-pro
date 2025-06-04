@@ -51,3 +51,15 @@ console.log(sum);
 console.log(`sum of x & y is : ${x + y}`);
 
 //85. Basic number operations: addition, subtraction, multiplication, division
+
+let a = 7.88888888,
+  b = 9.4444444444444,
+  add = a + b;
+console.log(`sum of ${a} and ${b} = ${add.toFixed(3)}`);
+console.log(`subtraction of ${a} and ${b} = ${(a - b).toFixed(2)}`);
+console.log(`mul of ${a} and ${b} = ${(a * b).toFixed(2)}`);
+console.log(`div of ${a} and ${b} = ${(a / b).toFixed(3)}`);
+
+let x1=10,y1=5,z1=2
+let result = (x1+y1)*z1-(y1/z1)
+console.log(result)
