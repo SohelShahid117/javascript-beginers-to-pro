@@ -60,6 +60,36 @@ console.log(`subtraction of ${a} and ${b} = ${(a - b).toFixed(2)}`);
 console.log(`mul of ${a} and ${b} = ${(a * b).toFixed(2)}`);
 console.log(`div of ${a} and ${b} = ${(a / b).toFixed(3)}`);
 
-let x1=10,y1=5,z1=2
-let result = (x1+y1)*z1-(y1/z1)
-console.log(result)
+let x1 = 10,
+  y1 = 5,
+  z1 = 2;
+let result = (x1 + y1) * z1 - y1 / z1;
+console.log(result);
+
+//86. Using Math object for complex operations: Math.round(), Math.random(), Math.max()
+
+// const num1 = 5.78;
+const num1 = 5.5;
+// const num1 = 5.49;
+console.log("Fixed number is : " + num1.toFixed());
+console.log("Round number is : " + Math.round(num1));
+console.log("Ceil number is : " + Math.ceil(num1));
+console.log("Floor number is : " + Math.floor(num1));
+
+let randomNumber = Math.random();
+console.log("Random number is : " + randomNumber);
+
+//random number between 1 to 10
+
+let randomNumber10 = Math.floor(Math.random() * 10) + 1;
+console.log("Random number from 1 to 10 is : " + randomNumber10);
+
+const x2 = 5;
+const x3 = 145;
+const x4 = 58;
+console.log("max number is : " + Math.max(x1, x2, x3, x4));
+
+let numbers = [55, 89, 76, 99, 11];
+console.log("largest number is :" + Math.max(...numbers));
+
+//87. Number methods: toFixed(), parseInt(), parseFloat()
