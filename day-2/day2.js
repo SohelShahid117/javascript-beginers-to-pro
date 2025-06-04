@@ -15,8 +15,29 @@ console.log(greeting);
 let fun = 'javascript is "fun"';
 console.log(fun);
 
-let poem = "poem is \nmultiline";
-let poem2 = `poem 
-is multiline`;
+let poem = "Poem is \nMultiline";
+let poem2 = `Poem 
+is Multiline`;
 console.log(poem);
 console.log(poem2);
+
+//83. String methods: length, toUpperCase(), toLowerCase(), slice(), substring(), etc.
+console.log("poem length " + poem.length);
+console.log("poem2 length " + poem2.length);
+console.log(poem.toLocaleUpperCase());
+console.log(poem2.toLowerCase());
+console.log(poem.toUpperCase());
+
+//slice() method extract a part from string
+
+let phrase = "welcome to javascript";
+console.log(phrase.slice(0, 11));
+console.log(phrase.slice(11, -1));
+console.log(phrase.slice(11, phrase.length).toUpperCase());
+// console.log(phrase.slice(11, phrase.length).toUpperCase());
+console.log(phrase.substring(11, 1)); //substring not accept -ve value
+console.log(phrase.substring(11, phrase.length));
+
+const word = "                      coding!!!         ";
+console.log(word);
+console.log(word.trim());
