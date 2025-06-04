@@ -93,3 +93,29 @@ let numbers = [55, 89, 76, 99, 11];
 console.log("largest number is :" + Math.max(...numbers));
 
 //87. Number methods: toFixed(), parseInt(), parseFloat()
+
+const price = 15.499993333333444;
+console.log(price.toFixed());
+console.log(price.toFixed(2));
+
+//parseInt()--->convert string or decimal to number
+console.log(parseInt("2342"));
+console.log(parseInt(2342.676));
+console.log(parseInt("abc2342.676"));
+console.log(parseInt("2342.676abc"));
+
+let binaryNumb = "10101";
+let hexDecimalNumb = "FF";
+console.log(parseInt(binaryNumb, 2));
+console.log(parseInt(hexDecimalNumb, 16));
+
+console.log(parseFloat("2342.8976")); //JSON data convert to number
+console.log(parseFloat("3.1415").toFixed(2));
+
+const productPrice1 = "55.67";
+const productPrice2 = "45.96";
+const totalPrice =
+  parseFloat(productPrice1) * 5 + parseFloat(productPrice1) * 10;
+console.log(totalPrice.toFixed(2));
+
+//88. Primitive Data Types and Non-Primitive Data Types
