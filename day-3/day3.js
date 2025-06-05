@@ -12,3 +12,11 @@ let num2 = 5;
 console.log(num1 > num2);
 
 //90. Conditional statements: if, else if, else
+
+// let age = 18;
+let age = 16;
+if (age >= 18) {
+  console.log("u can vote");
+} else {
+  console.log("u can't vote");
+}
