@@ -119,3 +119,47 @@ const totalPrice =
 console.log(totalPrice.toFixed(2));
 
 //88. Primitive Data Types and Non-Primitive Data Types
+
+/*
+Primitive Data is immutable -->can't changed
+primitive data can't changed original value
+*/
+let name = "Alice"; // String
+let age = 30; // Number
+let isActive = true; // Boolean
+let bigNum = 12345678901234567890n; // BigInt
+let id = Symbol("id"); // Symbol
+let u; // Undefined
+let v = null; // Null
+console.log(age);
+age = 45;
+console.log(age);
+
+//Non-primitive types are mutable (can be changed) and stored by reference.
+let person = { name: "Bob", age: 25 }; // Object-->collection of key-value pairs
+person = { name: "Aaaaaa", age: 125 }; // Object
+let nmbr = [1, 2, 3]; // Array
+let greet = function () {
+  console.log("Hello!");
+}; // Function
+console.log(person.name);
+greet();
+
+let p = 10;
+let q = p;
+console.log("p = " + p);
+console.log("q = " + q);
+q = 20;
+console.log("q = " + q);
+
+let obj1 = {
+  a: 10,
+};
+console.log(obj1);
+let obj2 = obj1;
+console.log(obj2);
+obj2.a = 33; //Non-primitive types are mutable (can be changed) and stored by reference.
+console.log(obj2);
+console.log(obj1);
+console.log(p);
+console.log(q);
