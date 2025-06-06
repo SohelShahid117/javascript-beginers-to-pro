@@ -86,5 +86,16 @@ function greetUser(name) {
 greetUser("Shahid"); //shahid : argument
 greetUser("Aadil"); //Aadil : argument
 
-
 //94. Parameters, Arguments and return values of Function
+
+function addNumbers(a, b) {
+  // return a + b;
+  // return a - b;
+  // return a * b;
+  return a / b;
+}
+const add = addNumbers(3, 4);
+console.log(add);
+
+
+//95. How to Work with Arrow functions
