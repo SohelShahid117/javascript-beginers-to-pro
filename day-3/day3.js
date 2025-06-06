@@ -97,5 +97,26 @@ function addNumbers(a, b) {
 const add = addNumbers(3, 4);
 console.log(add);
 
-
 //95. How to Work with Arrow functions
+
+const sum = (a, b) => {
+  // const result = a + b;
+  // console.log(result);
+  return a + b;
+};
+sum(33, 4);
+console.log(sum(4, 5));
+const add2 = sum(9, 5); //kono function k 1t variable e rakake bole Function Expressions
+console.log(add2);
+
+const multiplication = (a, b) => a * b;
+console.log(multiplication(22, 3));
+
+//96. Function Expressions, Anonymous Functions and Callbacks
+
+const friends = ["Samsul", "nurnahar", "tuhin", "aadil", "sumi", "mariam"];
+friends.forEach((f) => {
+  console.log(`welcome ${f}`);
+});
+
+//97. Arrays in JavaScript: Creating and accessing arrays
