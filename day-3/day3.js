@@ -72,3 +72,19 @@ if (!isLoggedIn) {
 }
 
 //92. Practical Example of Logical Operators (AND, OR and NOT)
+
+//93. Basic Functions in JavaScript
+function greet() {
+  console.log("hello world");
+}
+greet();
+
+function greetUser(name) {
+  //name : parameter
+  console.log(`hello ${name}`);
+}
+greetUser("Shahid"); //shahid : argument
+greetUser("Aadil"); //Aadil : argument
+
+
+//94. Parameters, Arguments and return values of Function
