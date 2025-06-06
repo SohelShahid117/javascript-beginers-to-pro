@@ -120,3 +120,17 @@ friends.forEach((f) => {
 });
 
 //97. Arrays in JavaScript: Creating and accessing arrays
+
+console.log(friends.length);
+console.log(friends[2]);
+
+//98. Array methods: push(), pop(), shift(), unshift()
+console.log("initial : " + friends);
+friends.pop(); //pop remove last element
+console.log("after pop : " + friends);
+friends.push("abc"); //push add element in last position
+console.log("after push : " + friends);
+friends.shift(); //shift remove first element
+console.log("after shift : " + friends);
+friends.unshift("mariam"); //unshift add first element
+console.log(friends);
