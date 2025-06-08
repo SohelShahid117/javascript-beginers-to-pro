@@ -112,3 +112,26 @@ console.log(Calculator.divide(4, 5));
 console.log(Calculator.divide(4, 0));
 
 //106. Introduction to Loops in JavaScript (`for` loop, `while` loop, `do...while`)
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+let j = 0;
+while (j < 5) {
+  console.log("j = " + j);
+  j++;
+}
+
+//use the browser console
+// let password;
+// do {
+//   // password = prompt("enter your password");
+// } while (password !== "12345");
+// console.log(password);
+
+let i = 5;
+do {
+  console.log("i = " + i);
+  i++;
+} while (i > 10);

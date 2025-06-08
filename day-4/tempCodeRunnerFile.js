@@ -1,1 +1,3 @@
-102. Creating Objects with Properties and Method
+
+  i++;
+} while (i > 10);
