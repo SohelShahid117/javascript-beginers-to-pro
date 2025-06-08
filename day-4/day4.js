@@ -85,3 +85,30 @@ const person = {
 console.log(person.fullName());
 
 //105. Practical Project: Create a Calculator Object and Apply Properties & Methods
+
+const Calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+  subtract: function (a, b) {
+    return a - b;
+  },
+  multiply: function (a, b) {
+    return a * b;
+  },
+  divide: function (a, b) {
+    if (b === 0) {
+      return "Error : Can not divided by 0";
+    } else {
+      return a / b;
+    }
+  },
+};
+
+console.log(Calculator.add(4, 5));
+console.log(Calculator.subtract(4, 5));
+console.log(Calculator.multiply(4, 5));
+console.log(Calculator.divide(4, 5));
+console.log(Calculator.divide(4, 0));
+
+//106. Introduction to Loops in JavaScript (`for` loop, `while` loop, `do...while`)
