@@ -52,19 +52,36 @@ car.start();
 const student = {
   name: "Sohel",
   age: 35,
-  subjecct: ["Math", "Physics", "ICT"],
+  subject: ["Math", "Physics", "ICT"],
 
   //object e method hobe always regular function.not arrow function
   greet: (nam) => {
     console.log(`Hi,I am ${nam}`);
   },
+  //104. Using this Keyword Inside Methods
   greet2: function () {
-    console.log(`Hi,I am ${this.name},Nice to meet u`);
+    console.log(`Hi,I am ${this.name},Nice to meet u.My age is ${this.age}`);
   },
 };
+
+//103. Accessing and Modifying Object Properties
+
+(student.name = "Shahid"), (student.age = 37);
 
 console.log(student.name);
 student.greet(student.name);
 student.greet2();
+console.log(student["subject"]);
 
-//103. Accessing and Modifying Object Properties
+//104. Using this Keyword Inside Methods
+
+const person = {
+  firstName: "Sohel",
+  lastName: "Shahid",
+  fullName: function () {
+    return `hi I am ${this.firstName} ${this.lastName}`;
+  },
+};
+console.log(person.fullName());
+
+//105. Practical Project: Create a Calculator Object and Apply Properties & Methods
