@@ -32,3 +32,39 @@ const sentence = words.join("     ");
 console.log(sentence);
 
 //101. Introduction to JavaScript Object
+
+const car = {
+  brand: "Toyota",
+  year: 2021,
+  start: () => {
+    console.log("the car started");
+  },
+  stop: () => {
+    console.log("the car stopped");
+  },
+};
+
+console.log(car);
+car.start();
+
+//102. Creating Objects with Properties and Method
+
+const student = {
+  name: "Sohel",
+  age: 35,
+  subjecct: ["Math", "Physics", "ICT"],
+
+  //object e method hobe always regular function.not arrow function
+  greet: (nam) => {
+    console.log(`Hi,I am ${nam}`);
+  },
+  greet2: function () {
+    console.log(`Hi,I am ${this.name},Nice to meet u`);
+  },
+};
+
+console.log(student.name);
+student.greet(student.name);
+student.greet2();
+
+//103. Accessing and Modifying Object Properties
