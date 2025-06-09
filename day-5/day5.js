@@ -56,7 +56,30 @@ console.log(now);
 // const specificDate = new Date("6/9/2025");
 // console.log(specificDate);
 
-const customDate = new Date(2025, 06, 08, 15, 10, 30);
+const customDate = new Date(2025, 6, 8, 15, 10, 30);
 console.log(customDate);
 
 //111. Getting and Setting Dates and Times
+
+//getting the date
+const date = new Date();
+console.log(date);
+console.log(date.getFullYear());
+console.log(date.getMonth() + 1);
+console.log(date.getDate());
+console.log(date.getHours());
+console.log(date.getMinutes());
+console.log(date.getSeconds());
+
+//setting the date
+
+const myDate = new Date();
+myDate.setFullYear(2025);
+myDate.setMonth(5); //month calculate as like array
+myDate.setDate(9);
+myDate.setHours(14, 45, 56);
+console.log(myDate);
+console.log(myDate.getFullYear());
+console.log(myDate.getMonth());
+
+//112. Formatting dates and times using toLocaleDateString(), toLocaleTimeString()
