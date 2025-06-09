@@ -83,3 +83,35 @@ console.log(myDate.getFullYear());
 console.log(myDate.getMonth());
 
 //112. Formatting dates and times using toLocaleDateString(), toLocaleTimeString()
+
+const date2 = new Date();
+console.log(date2);
+console.log(date2.toLocaleString());
+console.log(date2.toLocaleDateString());
+console.log(date2.toLocaleDateString("en-GB")); //date in British Format
+console.log(date2.toLocaleDateString("fr-FR")); //date in France Format
+console.log(date2.toLocaleTimeString("en-GB"));
+console.log(date2.getHours());
+console.log(date2.getMinutes());
+
+function displayDateTime() {
+  const now = new Date();
+
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const day = now.getDate();
+  const hr = now.getHours();
+  const min = now.getMinutes();
+  const sec = now.getSeconds();
+
+  //format the date & time
+
+  const formateDate = `${day}/${month}/${year}`;
+  const formateTime = `${hr}:${min}:${sec}`;
+
+  console.log(`Todays date is : ${formateDate}`);
+  console.log(`Now time is : ${formateTime}`);
+}
+displayDateTime();
+
+//113. JavaScript Event Handling: (click event)
