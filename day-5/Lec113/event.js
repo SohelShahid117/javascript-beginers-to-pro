@@ -23,3 +23,16 @@ hoverDiv.addEventListener("mouseout", () => {
 });
 
 //115. Handling Keyboard Events (keydown and keyup)
+
+const inputField = document.getElementById("inputField");
+const keyMessage = document.getElementById("keyMessage");
+console.log(keyMessage);
+
+inputField.addEventListener("keydown", (e) => {
+  keyMessage.innerText = `u pressed ${e.key}`;
+});
+inputField.addEventListener("keyup", (e) => {
+  keyMessage.innerText = `u released ${e.key}`;
+});
+
+//116. Adding Event Listeners to Elements: addEventListener()
