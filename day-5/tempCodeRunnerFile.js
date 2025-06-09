@@ -56,7 +56,5 @@ console.log(now);
 // const specificDate = new Date("6/9/2025");
 // console.log(specificDate);
 
-const customDate = new Date(2025, 06, 08, 15, 10, 30);
+const customDate = new Date(2025, 6, 8, 15, 10, 30);
 console.log(customDate);
-
-//111. Getting and Setting Dates and Times
