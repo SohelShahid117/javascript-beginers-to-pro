@@ -22,3 +22,31 @@ console.log(msg[0].innerText);
 msg.forEach((m) => {
   console.log(m.innerText);
 });
+
+//120. Modifying element content: textContent, innerHTML, style
+const greeting = document.getElementById("greeting");
+console.log(greeting);
+console.log(greeting.textContent);
+console.log(greeting.innerText);
+// greeting.textContent = "good evening";
+// setTimeout(() => {
+//   greeting.textContent = "good evening";
+// }, 5000);
+
+const info = document.getElementById("info");
+console.log(info);
+info.innerHTML =
+  "<b> visit <a href='https://www.w3schools.com' target='_blank'>this link</a> for details </b> ";
+
+greeting.style.color = "red";
+greeting.style.padding = "10px";
+greeting.style.border = "5px dotted lightGreen";
+
+const textContenet = document.getElementsByClassName("text_contenet");
+console.log(textContenet);
+console.log(textContenet[0].innerText);
+textContenet[0].style.color = "red";
+textContenet[0].style.backgroundColor = "yellow";
+textContenet[0].style.padding = "50px";
+
+//121. Adding and removing elements dynamically with JavaScript
