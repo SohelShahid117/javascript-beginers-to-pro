@@ -52,3 +52,16 @@ setTimeout(() => {
 }, 5000);
 
 //117. Event Object: event.target, event.type, preventDefault() with practical project
+const myForm = document.getElementById("myForm");
+const nameInput = document.getElementById("nameInput");
+const formMsg = document.getElementById("formMsg");
+
+myForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  console.log(myForm);
+  console.log(nameInput);
+  formMsg.innerText = `form submitted by : ${nameInput.value}`;
+});
+
+//118. What is the DOM (Document Object Model)?
