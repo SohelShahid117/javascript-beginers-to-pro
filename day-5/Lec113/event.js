@@ -36,3 +36,19 @@ inputField.addEventListener("keyup", (e) => {
 });
 
 //116. Adding Event Listeners to Elements: addEventListener()
+const eventBtn = document.getElementById("eventBtn");
+const eventMsg = document.getElementById("eventMsg");
+// console.log(eventBtn, eventMsg);
+eventBtn.addEventListener("click", () => {
+  eventMsg.innerText = "hi";
+});
+
+setTimeout(() => {
+  eventBtn.innerText = "changed btn text";
+  eventBtn.style.backgroundColor = "lightGreen";
+  eventBtn.style.padding = "10px";
+  eventBtn.style.fontWeight = "bold";
+  eventBtn.style.borderRadius = "10px";
+}, 5000);
+
+//117. Event Object: event.target, event.type, preventDefault() with practical project
