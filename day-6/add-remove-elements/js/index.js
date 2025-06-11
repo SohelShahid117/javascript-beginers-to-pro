@@ -1,8 +1,6 @@
 //121. Adding and removing elements dynamically with JavaScrip
 console.log("hello");
 
-//6 min done
-
 const list = document.getElementById("list");
 const addItem = document.getElementById("addItem");
 const removeItem = document.getElementById("removeItem");
@@ -37,3 +35,33 @@ how to remove element:
 2.
 
 */
+
+//122. Forms and Input Handling in JavaScript
+
+const contactForm = document.getElementById("contactForm");
+console.log(contactForm);
+
+//123. Handling Input and Form Validation
+// contactForm.addEventListener("click", () => {
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("hi");
+
+  const userName = contactForm.elements["userName"].value;
+
+  const email = contactForm.elements["email"].value;
+
+  const password = contactForm.elements["password"].value;
+
+  console.log("Name : " + userName);
+  console.log("Email : " + email);
+  console.log("Password : " + password);
+
+  if (!userName || !email || !password) {
+    alert("Pls fill out the all field correctly");
+  } else {
+    alert("Registration submit successfully");
+  }
+});
+
+//124. Form Submission with preventDefault() [practical feedback form]
