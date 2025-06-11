@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>
+      125. Practical Project: Create a "Contact Us" Form with Validation
+    </title>
+  </head>
+  <body>
+    <!-- <h1>125. Practical Project: Create a "Contact Us" Form with Validation</h1> -->
+
+    <form id="contactForm">
+      <h2>Contact Us</h2>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="your name"
+        required
+      />
+      <span id="nameErr" class="error"></span>
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="your email"
+        required
+      />
+      <span id="emailErr" class="error"></span>
+
+      <label for="subject">Subject:</label>
+      <input
+        type="text"
+        name="subject"
+        id="subject"
+        placeholder="your subject"
+        required
+      />
+      <span id="subjectErr" class="error"></span>
+
+      <label for="message">Message:</label>
+      <textarea
+        name="message"
+        id="message"
+        rows="6"
+        placeholder="Your Message"
+        required
+      ></textarea>
+      <span id="messageErr" class="error"></span>
+
+      <button type="submit">Submit</button>
+
+      <p id="successMsg" class="success" style="display: none">
+        Thank you for contacting us
+      </p>
+    </form>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
