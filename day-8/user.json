@@ -1,0 +1,10 @@
+{
+  "name": "sohel",
+  "age": 35,
+  "isStd": true,
+  "hobbies": ["gardening", "traveling", "coding"],
+  "address": {
+    "city": "ctg",
+    "zipCode": 789
+  }
+}
