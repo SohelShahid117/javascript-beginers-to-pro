@@ -60,6 +60,4 @@ form.addEventListener("submit", (e) => {
     successMsg.style.display = "block";
     form.reset();
   }
-
-  //34 min done
 });

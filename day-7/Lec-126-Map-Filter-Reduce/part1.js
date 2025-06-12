@@ -51,6 +51,31 @@ console.log(totalPrice);
 //product filtering : filter()
 //total price:reduce()
 
-
-
 //127. Using find() and some() methods for advanced searches
+
+//find():returns the first element match with condition
+
+const users = [
+  { name: "Tuhin", age: 19 },
+  { name: "Aadil", age: 4 },
+  { name: "Sumi", age: 33 },
+  { name: "Sohel", age: 35 },
+];
+
+//find() method return first element match with condition
+const findUser = users.find((user) => user.age >= 20);
+console.log("find user : ", findUser);
+
+//filter() method return an array[]
+const filterUser = users.filter((user) => user.age >= 20);
+console.log("filter user : ", filterUser);
+
+//some() method return true || false
+const hasYounger = users.some((user) => user.age >= 18);
+console.log(hasYounger);
+
+let initialAge = 0;
+const totalAge = users.reduce((preAge, user) => {
+  return preAge + user.age;
+}, initialAge);
+console.log("total age is : ", totalAge);
