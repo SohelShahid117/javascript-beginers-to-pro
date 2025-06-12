@@ -52,6 +52,14 @@ form.addEventListener("submit", (e) => {
     emailErr.textContent = "email is required";
     isValid = false;
   }
+  if (message.value.trim().length < 10) {
+    messageErr.textContent = "Message must be at least 10 characters";
+    isValid = false;
+  }
+  if (isValid) {
+    successMsg.style.display = "block";
+    form.reset();
+  }
 
   //34 min done
 });

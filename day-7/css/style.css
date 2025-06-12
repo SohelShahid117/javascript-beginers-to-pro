@@ -39,3 +39,9 @@ button {
   text-decoration: none;
   width: 100%;
 }
+
+.error {
+  color: yellow;
+  margin-top: 10px;
+  display: block;
+}
