@@ -34,3 +34,20 @@ const displayItems = expensiveItem.map((item) =>
 );
 
 //129. Practical Examples of Filtering and Transforming User Data
+
+const users = [
+  { name: "sohel", age: 35, isActive: true, mail: "shl@gmail.co" },
+  { name: "sumi", age: 33, isActive: true, mail: "smi@gmail.co" },
+  { name: "tuhin", age: 23, isActive: true, mail: "thn@gmail.co" },
+  { name: "adil", age: 4, isActive: false, mail: "adl@gmail.co" },
+];
+
+// const activeUsers = users.filter((u) => u.isActive);
+// const activeUsers = users.map((u) => u.isActive);
+const activeUsers = users.map((u) => u);
+const activeUsers2 = users.filter((u) => u.isActive && u.age > 30);
+console.log(activeUsers);
+console.log(activeUsers2);
+
+const emails = activeUsers2.map((u) => u.mail);
+console.log(emails);
