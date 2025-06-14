@@ -23,5 +23,3 @@ console.log("specific JSON data store to DB : ", convertToJSONDataLimited);
 
 const convertJSONtoObj = JSON.parse(convertToJSONData);
 console.log("JSON to object data is : ", convertJSONtoObj);
-
-//133. Error Handling in JavaScript (Syntax, Runtime & Logical Errors)
