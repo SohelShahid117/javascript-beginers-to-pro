@@ -3,19 +3,22 @@
 //creating new promise
 const myPromise = new Promise((resolve, reject) => {
   const success = true; //initial state
+  // const success = false; //initial state
   if (success) {
     // console.log("the task completed successfully");
-    resolve("the task completed successfully 2");
+    resolve("the task completed successfully 2"); //go to then
   } else {
-    reject("mission failed");
+    reject("mission failed"); //go to catch()
   }
 });
 
 //handling promises using then(),catch()
 myPromise
   .then((message) => {
-    console.log(message);
+    //then for resolve
+    console.log("message is : ", message);
   })
   .catch((err) => {
-    console.log(err);
+    //catch for reject
+    console.log("error is : ", err);
   }); //as like try catch
