@@ -22,7 +22,7 @@ const calculateTotalPrice = (...prices) => {
   );
 };
 
-const displayProductdetails = ({ name, price }) => {
+const displayProductDetails = ({ name, price }) => {
   return `Product is : ${name} & price is : ${price}`;
 };
 
@@ -33,4 +33,4 @@ const sumOfPrice = calculateTotalPrice(500, 200, 20);
 // const sumOfPrice = calculateTotalPrice({ ...products.price });
 console.log("total price = ", sumOfPrice);
 
-console.log(displayProductdetails({ name: "Tablet", price: 900 }));
+console.log(displayProductDetails({ name: "Tablet", price: 900 }));
